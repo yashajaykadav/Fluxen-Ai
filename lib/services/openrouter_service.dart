@@ -5,8 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class OpenRouterService {
   final _storage = FlutterSecureStorage();
-  // final String _apiKey =
-  //     "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";
+
   final String _baseUrl = "https://openrouter.ai/api/v1/chat/completions";
 
   Future<String> askAi(String prompt, String context) async {
