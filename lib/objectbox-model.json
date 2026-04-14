@@ -1,0 +1,110 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:3555535402585501559",
+      "lastPropertyId": "4:3402132815190790762",
+      "name": "DocumentChunk",
+      "properties": [
+        {
+          "id": "1:2162364415982130673",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7581979953479869495",
+          "name": "text",
+          "type": 9
+        },
+        {
+          "id": "3:1856293770407682245",
+          "name": "fileName",
+          "type": 9
+        },
+        {
+          "id": "4:3402132815190790762",
+          "name": "signature",
+          "indexId": "1:8644215214992636972",
+          "type": 28,
+          "flags": 8
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:2391369346006943837",
+      "lastPropertyId": "5:8003212851453468315",
+      "name": "ChatMessageEntity",
+      "properties": [
+        {
+          "id": "1:2078318489556208222",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1334439365793609827",
+          "name": "text",
+          "type": 9
+        },
+        {
+          "id": "3:1640014571977757087",
+          "name": "isUser",
+          "type": 1
+        },
+        {
+          "id": "4:1970915562416848669",
+          "name": "timestamp",
+          "type": 10
+        },
+        {
+          "id": "5:8003212851453468315",
+          "name": "sessionId",
+          "indexId": "2:808633648634762388",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "ChatSession"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:6406685179742239241",
+      "lastPropertyId": "3:196643869565992661",
+      "name": "ChatSession",
+      "properties": [
+        {
+          "id": "1:2798214147332270943",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1101077580928428854",
+          "name": "title",
+          "type": 9
+        },
+        {
+          "id": "3:196643869565992661",
+          "name": "timestamp",
+          "type": 10
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:6406685179742239241",
+  "lastIndexId": "2:808633648634762388",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
